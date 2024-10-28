@@ -1,0 +1,167 @@
+/**colors: #1B274C ;**/
+.flexRow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    object-position: center;
+    align-items: center;
+}
+.flexCol{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    object-position: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.alingCenter{
+    text-align: center;
+}
+.alingJusty{
+    text-align: justify;
+}
+
+hr{
+    margin: auto;
+    animation-name: escX;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+/**menu**/
+/**inicio**/
+/**Seccion**/
+.section{
+    backdrop-filter: blur(100px) opacity(94%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 0;
+    height: auto;
+    min-width: 720px;
+}
+
+.bienvenida{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/**Acerca Nosotros**/
+
+.nSection{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.parrafo{
+    min-width: 720px;
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+}
+/**Servicio**/
+.servCard{
+    width: 200px;
+    height: 330px;
+    border-bottom: 1px solid darkblue;
+    padding: 5px;
+    transition: all 1s;
+}
+
+.servCard:hover{
+    background-color: rgb(122, 197, 246);
+    animation-name: esc;
+}
+
+.servCard img{
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    transition: all 1s;
+}
+.servCard:hover>img{
+    transition: all 1s;
+    transform: scale(1.2) rotate(10deg);
+}
+.servCard h3{
+    height: 60px;
+}
+.servCard p{
+    height: 130px;
+}
+.cardBox{
+    gap: 20px;
+    font-size: 0.8em;
+    animation-name: escalar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+/**contacto**/
+input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+textarea{
+    width: 400px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.enviarButton{
+    width: 400px;
+    height: 40px;
+    border: 1px solid cornflowerblue;
+    border-radius: 40px;
+    background-color: #1B274C;
+    color: white;
+    transition: all 1s;
+}
+
+.enviarButton:hover{
+    background-color: rgb(27, 39, 76);
+    transition: all 1s;
+}
+
+.redes{
+    padding-bottom: 50px;
+    gap: 20px;
+}
+.redes img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    transition: all 1s;
+    border-radius: 25%;
+}
+.redes img:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+    background-color: rgb(122, 197, 246);
+    border-radius: 100%;
+}
+
+.error{
+    width: 400px;
+}
+/*animaciones*/
+@keyframes escalar{
+    from{
+        transform: scale(0.0);
+    }
+    to{
+        transform: scale(1.0);
+    }
+}
+@keyframes escX{
+    from{
+        transform: scaleX(0.0);
+    }
+    to{
+        transform: scaleX(1.0);
+    }
+}

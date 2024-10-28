@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Doctors</title>
+    <link rel="stylesheet" href="../css/customStyles.css">
+    <link rel="stylesheet" href="../css/menuStyles.css">
+    <!--Boostrap-->
+    <link rel="stylesheet" href="../plugins/bootstrap.css">
+    <script src="../plugins/bootstrap.js"></script>
+    <!--jQuery-->
+</head>
+<body>
+    <div class="contenedor">
+        <!--NAV-->
+        <nav class="navbar navbar-expand-lg border-bottom border-bottom-dark op-menu" data-bs-theme="dark">
+            <span>
+                <div class="logo flex-start">
+                    <img src="../media/bg/data docotors white-1.png" alt="logo">
+                    <h4>Data Doctors</h4>
+                </div>
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-end">
+                    <a href="../index.html"><li>Inicio</li></a>
+                    <a href="./nos.html"><li>nosotros</li></a>
+                    <a href="./servicio.html"><li>servicio</li></a>
+                    <a href="#"><li class="c">Contacto</li></a>
+                </ul>
+            </div>
+        </nav>
+        <div class="contenido">
+            <!--contenido-->
+            <div class="sub-contenido text-center flex-colum-center">
+                <br>
+                <h2>Contactanos</h2>
+                <hr>
+                <div>
+                    <p>
+                        ¡Gracias por elegir a Data Doctors! Estamos aquí para cuidar de tus equipos inform&aacute;ticos y asegurarnos de que funcionen de manera &oacute;ptima para ti.
+                    </p>
+                </div>
+                <form id="formulario" name="formulario" action="" method="get" class="flex-form" >
+                    <input type="text" id="nombre" name="nombre" placeholder=" Nombre Completo">
+                    <input type="email" id="email" name="email" placeholder=" Correo Electr&oacute;nico: usuario@ejemplo.com">
+                    <input type="tel" id="tel" name="tel" placeholder=" N&uacute;mero telef&oacute;co: (+000)0000-0000">
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder=" Mensaje"></textarea>
+                    <input class="enviarButton" type="button" id="enviar" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer flex-colum-center">
+            <p>2023 © Data Doctors</p>
+            <div class="box-redes">
+                <a href="#"><img src="../media/icons/faceIcon.png" alt="face"></a>
+                <a href="#"><img src="../media/icons/igIcon.png" alt="ig"></a>
+                <a href="#"><img src="../media/icons/tiktokIcon.png" alt="tik"></a>
+            </div>
+        </div>
+    </div>
+    <script src="../plugins/jQ.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/formulario.js"></script>
+</body>
+</html>
