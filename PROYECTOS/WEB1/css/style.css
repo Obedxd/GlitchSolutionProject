@@ -1,0 +1,172 @@
+/* Seccion de estilo de inicio */
+a.nav-link.activo{
+    color: yellow;
+}
+
+a.nav-link:hover{
+    color: yellow;
+}
+
+#menu{
+    position: fixed;/*Hace que el menu se quede fijo en la parte de arriba*/
+    width: 100%;
+}
+/* Finaliza seccion de estilo de inicio */
+
+/* Seccion de estilo de servicios */
+.service{
+	text-align: center;
+}
+.lorem{
+	text-align: center;
+	color:gray;
+}
+.imagen{
+	display: block;
+	margin: auto;
+    width: 200px;
+    height: 200px;
+}
+.texto{
+	text-align: center;
+	margin: auto;
+    padding-top: 20px;
+    color: gray;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 75px;
+}
+/* Finaliza seccion de estilo de servicios */
+
+/* Seccion de estilo de contactos */
+#all-contenido{
+    color: black;
+    background-color: #ededed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+}
+
+.titulo1 p{
+    font-size: 40px;
+    font-style: italic;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.subtitulo1 p{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.titulo h2{
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.subtitulo h4{
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 75px;
+}
+
+.datos-form{
+    padding: 10px;
+}
+
+.datos-form input, .boton{
+    height: 60px;
+}
+
+#mensaje{
+    height: 220px;
+}
+
+.col-lg-12{
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+button.btn.btn-warning{
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    width: 250px;
+    height: 60px;
+}
+/* Finaliza la seccion de contactos */
+
+/* Portafolio */
+.portafolio-img{
+    width: 300px;
+}
+
+.portafolio-tarj{
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.portafolio-img{
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+}
+
+.portafolio-img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+/* Fin portafolio */
+
+/* Equipo */
+.equipo-img{
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/* Fin Equipo */
+
+/* Seccion de estilo de footer o pie */
+footer{
+    text-align: center;
+    padding: 25px;
+}
+
+.contenido-pie{
+    align-items: center;
+}
+
+.col-md-12 li{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.col-md-4 li{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.content-ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content-ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.img-pie{
+    width: 40px;
+    height: 40px;
+}
+/* Finaliza seccion de estilo de footer o pie */

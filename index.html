@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Solutions | GS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%; /* Asegúrate de que el html y el body ocupen el 100% de la altura */
+            margin: 0; /* Eliminar márgenes predeterminados */
+        }
+
+        .container {
+            flex: 1; /* Permitir que el contenedor ocupe todo el espacio disponible */
+        }
+
+        body {
+            background-color: #121212; /* Color de fondo oscuro */
+            color: #ffffff; /* Texto en blanco para mejor contraste */
+            background: linear-gradient(to right, #121212, #8013ef);
+            display: flex; /* Usar flexbox para la disposición */
+            flex-direction: column; /* Disposición en columna */
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Fondo del menú */
+            transition: background-color 0.3s;
+        }
+
+        .navbar-brand img {
+            width: 50px; /* Tamaño del logo */
+            height: auto;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.164); */
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover {
+            background-color: #1a1a1a;
+            color: white;
+            font-weight: 900;
+            border-radius: 10px;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #6ae7f0;
+        }
+
+
+        .titulo-GS {
+            font-family: 'Courier New', monospace; /* Fuente tipo monoespaciada */
+            font-weight: 700;
+            white-space: nowrap; /* Evita el salto de línea */
+            overflow: hidden; /* Oculta el texto que se desborda */
+            border-right: .15em solid orange; /* Cursor de máquina de escribir */
+            animation: blink-caret .75s step-end infinite; /* Solo el cursor parpadeante inicialmente */
+        }
+
+
+        /* Animación de escritura */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 725px; }
+        }
+
+        /* Animación del cursor parpadeante */
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+
+        .footer-bg{
+            background-color: #343a40a8;
+            box-shadow: 0px -3px 25px 0px #6ae7f0;
+        }
+
+        .center-logo-container {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        .center-logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./IMG/Logo.jpg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./HTML/portafolio.html">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./HTML/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./HTML/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./HTML/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1 class="titulo-GS">Bienvenidos a Glitch Solution </h1>
+        <div class="row">
+            <div class="col center-logo-container">
+                <img src="./IMG/Logo.jpg" alt="GSLogo" class="center-logo" style="width: 300px; margin: 20px 0;">
+            </div>            
+
+            <div class="col p-4" style="font-family: monospace; background-color: rgba(255, 255, 255, 0.05); border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 1.75rem; font-weight: bold; color: #6ae7f0;">¿Quiénes somos?</h2>
+                <p style="font-size: 1.1rem; line-height: 1.6;">
+                    En <strong style="color: #6ae7f0;">Glitch Solution</strong>, somos un equipo apasionado por la tecnología y el diseño, especializados en la creación de páginas web innovadoras y funcionales.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.6;">
+                    Nuestro objetivo es ayudar a las empresas pequeñas y emprendedores a tener una presencia digital que refleje su identidad y alcance a su público objetivo de manera efectiva.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.6;">
+                    Ya sea que estés iniciando en el mundo digital o buscando renovar tu presencia en línea, en <strong style="color: #6ae7f0;">Glitch Solution</strong> estamos aquí para ayudarte a destacar en el entorno digital.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <footer class="footer-bg text-light text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Glitch Solutions. Todos los derechos reservados.</p>
+            <p>
+                <a href="#" class="text-light">Política de privacidad</a> |
+                <a href="#" class="text-light">Términos y condiciones</a> |
+                <a href="#" class="text-light">Contacto</a>
+            </p>
+            <div>
+                <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function startTypingAnimation() {
+            const title = document.querySelector('.titulo-GS');
+            title.style.width = '0'; // Reiniciar el ancho
+            title.offsetHeight; // Forzar el reflow para reiniciar la animación
+            title.style.animation = 'typing 5s steps(30, end) forwards, blink-caret .75s step-end infinite'; // Reiniciar la animación
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = document.querySelector('.titulo-GS');
+            title.style.width = title.scrollWidth + 'px'; // Ajustar el ancho al tamaño del texto
+            title.addEventListener('animationend', function() {
+                title.style.animation = 'none'; // Detener la animación
+                setTimeout(startTypingAnimation, 1000); // Reiniciar después de 1 segundo
+            });
+            startTypingAnimation(); // Iniciar la animación
+        });
+    </script>
+    
+    
+</body>
+</html>

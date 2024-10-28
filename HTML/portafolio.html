@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Solutions | GS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%; /* Asegúrate de que el html y el body ocupen el 100% de la altura */
+            margin: 0; /* Eliminar márgenes predeterminados */
+        }
+
+        .container {
+            flex: 1; /* Permitir que el contenedor ocupe todo el espacio disponible */
+        }
+
+        body {
+            background-color: #121212; /* Color de fondo oscuro */
+            color: #ffffff; /* Texto en blanco para mejor contraste */
+            background: linear-gradient(to right, #121212, #8013ef);
+            display: flex; /* Usar flexbox para la disposición */
+            flex-direction: column; /* Disposición en columna */
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Fondo del menú */
+            transition: background-color 0.3s;
+        }
+
+        .navbar-brand img {
+            width: 50px; /* Tamaño del logo */
+            height: auto;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.164); */
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover {
+            background-color: #1a1a1a;
+            color: white;
+            font-weight: 900;
+            border-radius: 10px;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #6ae7f0;
+        }
+
+        .titulo-GS {
+            font-family: 'Courier New', monospace; /* Fuente tipo monoespaciada */
+            font-weight: 700;
+            white-space: nowrap; /* Evita el salto de línea */
+            overflow: hidden; /* Oculta el texto que se desborda */
+            border-right: .15em solid orange; /* Cursor de máquina de escribir */
+            animation: blink-caret .75s step-end infinite; /* Solo el cursor parpadeante inicialmente */
+        }
+
+
+        /* Animación de escritura */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 680px; }
+        }
+
+        /* Animación del cursor parpadeante */
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+
+        .footer-bg{
+            background-color: #343a40a8;
+            /* box-shadow: 0px -3px 25px 0px white; */
+        }
+
+        footer a {
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .center-logo-container {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        .center-logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .card {
+            border: none;
+            background-color: #121212a1;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0 0px 20px 5px rgb(0 0 0 / 31%);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0px 25px 5px #6ae7f0;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card-body {
+            text-align: center;
+            background-color: #6ae7f0;
+            padding: 20px;
+        }
+
+        .card-text {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .card-link {
+            text-decoration: none;
+        }
+        
+        .portafolio-card{
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../IMG/Logo.jpg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./portafolio.html">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1 class="titulo-GS">Algunos de nuestros diseños</h1>
+
+        <div class="row">
+            <div class="col-md-4 portafolio-card">
+                <a class="card-link" href="../PROYECTOS/WEB1/index.html" target="_blank">
+                    <div class="card" style="width: 100%;">
+                        <img src="../IMG/fondo-card.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Diseño 1</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 portafolio-card">
+                <a class="card-link" href="../PROYECTOS/WEB2/index.html" target="_blank">
+                    <div class="card" style="width: 100%;">
+                        <img src="../IMG/fondo-card2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Diseño 2</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 portafolio-card">
+                <a class="card-link" href="../PROYECTOS/WEB3/index.html" target="_blank">
+                    <div class="card" style="width: 100%;">
+                        <img src="../IMG/fondo-card3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Diseño 2</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <footer class="footer-bg text-light text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Glitch Solutions. Todos los derechos reservados.</p>
+            <p>
+                <a href="#" class="text-light">Política de privacidad</a> |
+                <a href="#" class="text-light">Términos y condiciones</a> |
+                <a href="#" class="text-light">Contacto</a>
+            </p>
+            <div>
+                <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function startTypingAnimation() {
+            const title = document.querySelector('.titulo-GS');
+            title.style.width = '0'; // Reiniciar el ancho
+            title.offsetHeight; // Forzar el reflow para reiniciar la animación
+            title.style.animation = 'typing 5s steps(30, end) forwards, blink-caret .75s step-end infinite'; // Reiniciar la animación
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = document.querySelector('.titulo-GS');
+            title.style.width = title.scrollWidth + 'px'; // Ajustar el ancho al tamaño del texto
+            title.addEventListener('animationend', function() {
+                title.style.animation = 'none'; // Detener la animación
+                setTimeout(startTypingAnimation, 1000); // Reiniciar después de 1 segundo
+            });
+            startTypingAnimation(); // Iniciar la animación
+        });
+    </script>
+</body>
+</html>
