@@ -111,18 +111,30 @@
             transition: transform 0.3s;
         }
 
-        .contact-icons a:hover {
-            transform: scale(1.2);
-        }
-
+        /* Añade las siguientes propiedades para hacer el mapa responsive */
         .map-container {
-            margin: 20px 0;
+            width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+            max-width: 600px; /* Ajusta el tamaño máximo para dispositivos grandes */
+            margin: 20px auto; /* Centra el contenedor */
         }
 
-        .map-container iframe{
+        .map-container iframe {
+            width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor */
+            height: 400px; /* Ajusta la altura del iframe */
             border-radius: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
+        }
+
+        /* Puedes agregar media queries para dispositivos más pequeños */
+        @media (max-width: 576px) {
+            .map-container iframe {
+                height: 250px; /* Ajusta la altura para pantallas pequeñas */
+            }
+        }
+
+        .map-container iframe:hover{
+            transform: translateY(-10px);
         }
 
         .map-container iframe:hover{
@@ -174,7 +186,7 @@
             </a>
         </div>
 
-        <div class="map-container">
+        <div class="col-md-12 map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.6148970299496!2d-89.27844022418394!3d13.681165286703305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632e52b21e7433%3A0x42381e0917b2c4d7!2sUbiraci.me%20-%20Empresa%20de%20dise%C3%B1o%20Web!5e0!3m2!1ses!2ssv!4v1727821266142!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
