@@ -57,20 +57,35 @@
         .titulo-GS {
             font-family: 'Courier New', monospace;
             font-weight: 700;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: .15em solid orange;
-            animation: blink-caret .75s step-end infinite;
+            color: #ffffff;
+            font-size: 2.5rem; /* Tamaño ajustable */
+            animation: bounceInBlur 2.5s ease-out forwards;
+            opacity: 0;
+            text-align: center;
         }
 
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 580px; }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: orange; }
+        /* Animación de rebote y desenfoque */
+        @keyframes bounceInBlur {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) translateY(-100px);
+                filter: blur(10px);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.05) translateY(0);
+                filter: blur(2px);
+            }
+            70% {
+                opacity: 0.8;
+                transform: scale(0.95) translateY(-10px);
+                filter: blur(1px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+                filter: blur(0);
+            }
         }
 
         .footer-bg {
@@ -187,23 +202,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function startTypingAnimation() {
-            const title = document.querySelector('.titulo-GS');
-            title.style.width = '0';
-            title.offsetHeight;
-            title.style.animation = 'typing 5s steps(30, end) forwards, blink-caret .75s step-end infinite';
-        }
-    
-        document.addEventListener("DOMContentLoaded", function() {
-            const title = document.querySelector('.titulo-GS');
-            title.style.width = title.scrollWidth + 'px';
-            title.addEventListener('animationend', function() {
-                title.style.animation = 'none';
-                setTimeout(startTypingAnimation, 1000);
-            });
-            startTypingAnimation();
-        });
-    </script>
 </body>
 </html>
